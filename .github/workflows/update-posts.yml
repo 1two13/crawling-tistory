@@ -2,7 +2,7 @@ name: Update Tistory Posts
 
 on:
   schedule:
-    - cron: '* * * * *' # 매일 자정에 실행
+    - cron: '0 0 * * *' # 매일 자정에 실행
   workflow_dispatch: # 수동으로도 실행 가능
 
 jobs:
@@ -37,7 +37,9 @@ jobs:
       - name: Commit and push changes
         run: |
           git add posts
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git commit -m "Update Tistory posts" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: $REACT_APP_GITHUB_TOKEN
+        working-directory: .
