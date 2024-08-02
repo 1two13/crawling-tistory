@@ -36,7 +36,6 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          echo $REACT_APP_GITHUB_TOKEN
           git add posts
           git commit -m "Update Tistory posts" || echo "No changes to commit"
           git push
