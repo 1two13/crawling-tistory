@@ -41,5 +41,5 @@ jobs:
           git commit -m "Update Tistory posts" || echo "No changes to commit"
           git push
         env:
-          GITHUB_TOKEN: $REACT_APP_GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: .
