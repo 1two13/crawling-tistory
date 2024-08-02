@@ -37,7 +37,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git add posts
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://github.com/1two13/crawling-velog
           git commit -m "Update Tistory posts" || echo "No changes to commit"
           git push
         env:
