@@ -6,7 +6,7 @@
     <description>주니어 FE 개발자입니다.
 지식 공유하는 것을 좋아합니다 :)</description>
     <language>ko</language>
-    <pubDate>Sat, 3 Aug 2024 09:34:54 +0900</pubDate>
+    <pubDate>Sun, 4 Aug 2024 09:38:51 +0900</pubDate>
     <generator>TISTORY</generator>
     <ttl>100</ttl>
     <managingEditor>1two13</managingEditor>
@@ -15,24 +15,6 @@
       <url>https://tistory1.daumcdn.net/tistory/5849058/attach/3893385da4084beab426de0a25069d0d</url>
       <link>https://1two13.tistory.com</link>
     </image>
-    <item>
-      <title>test중</title>
-      <link>https://1two13.tistory.com/entry/test%EC%A4%91</link>
-      <description>&lt;p data-ke-size=&quot;size16&quot;&gt;test&lt;/p&gt;</description>
-      <author>1two13</author>
-      <guid isPermaLink="true">https://1two13.tistory.com/163</guid>
-      <comments>https://1two13.tistory.com/entry/test%EC%A4%91#entry163comment</comments>
-      <pubDate>Fri, 2 Aug 2024 22:38:42 +0900</pubDate>
-    </item>
-    <item>
-      <title>test2</title>
-      <link>https://1two13.tistory.com/entry/test2</link>
-      <description>&lt;p data-ke-size=&quot;size16&quot;&gt;t&lt;/p&gt;</description>
-      <author>1two13</author>
-      <guid isPermaLink="true">https://1two13.tistory.com/162</guid>
-      <comments>https://1two13.tistory.com/entry/test2#entry162comment</comments>
-      <pubDate>Fri, 2 Aug 2024 17:04:54 +0900</pubDate>
-    </item>
     <item>
       <title>i18n을 사용하여 다국어 처리 하기</title>
       <link>https://1two13.tistory.com/entry/i18n%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EB%8B%A4%EA%B5%AD%EC%96%B4-%EC%B2%98%EB%A6%AC-%ED%95%98%EA%B8%B0</link>
@@ -4630,6 +4612,144 @@ export default React.memo(MyComponent, areEqual);&lt;/code&gt;&lt;/pre&gt;
       <guid isPermaLink="true">https://1two13.tistory.com/111</guid>
       <comments>https://1two13.tistory.com/entry/React-%EB%A0%8C%EB%8D%94%EB%A7%81%EA%B3%BC-%EC%B5%9C%EC%A0%81%ED%99%94-Reactmemo%EB%A1%9C-%EC%9E%AC%EC%82%AC%EC%9A%A9%EC%97%AC%EB%B6%80-%ED%8C%90%EB%8B%A8%ED%95%98%EA%B8%B0#entry111comment</comments>
       <pubDate>Sun, 7 May 2023 15:57:23 +0900</pubDate>
+    </item>
+    <item>
+      <title>[JS] [12, 13, 1, 2]를 sort()한 결과가 sort((a,b) =&amp;gt; a-b)한 결과랑 같을까?</title>
+      <link>https://1two13.tistory.com/entry/JS-12-13-1-2%EB%A5%BC-sort%ED%95%9C-%EA%B2%B0%EA%B3%BC%EA%B0%80-sortab-a-b%ED%95%9C-%EA%B2%B0%EA%B3%BC%EB%9E%91-%EA%B0%99%EC%9D%84%EA%B9%8C</link>
+      <description>&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;문제의 답은 일단 &lt;b&gt;같지 않다&lt;/b&gt; 이다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;놀랍게도 콘솔창에서 확인해보면 결과 값은 아래와 같다.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;imageblock alignCenter&quot; data-ke-mobileStyle=&quot;widthOrigin&quot; data-origin-width=&quot;496&quot; data-origin-height=&quot;278&quot;&gt;&lt;span data-url=&quot;https://blog.kakaocdn.net/dn/dKHcdP/btsdhzJNXvj/30dd5BqoCpZfAkphWQqUmk/img.png&quot; data-phocus=&quot;https://blog.kakaocdn.net/dn/dKHcdP/btsdhzJNXvj/30dd5BqoCpZfAkphWQqUmk/img.png&quot; data-alt=&quot;콘솔&quot;&gt;&lt;img src=&quot;https://blog.kakaocdn.net/dn/dKHcdP/btsdhzJNXvj/30dd5BqoCpZfAkphWQqUmk/img.png&quot; srcset=&quot;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdKHcdP%2FbtsdhzJNXvj%2F30dd5BqoCpZfAkphWQqUmk%2Fimg.png&quot; onerror=&quot;this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';&quot; width=&quot;425&quot; height=&quot;238&quot; data-origin-width=&quot;496&quot; data-origin-height=&quot;278&quot;/&gt;&lt;/span&gt;&lt;figcaption&gt;콘솔&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;이유는 뭘까?&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;그 이유는 우선 mdn에서 확인해 볼 수 있었다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;imageblock alignCenter&quot; data-ke-mobileStyle=&quot;widthOrigin&quot; data-origin-width=&quot;1514&quot; data-origin-height=&quot;194&quot;&gt;&lt;span data-url=&quot;https://blog.kakaocdn.net/dn/1isEO/btsdtF9VPx8/HfRBgMxZp1fydKkIn7queK/img.png&quot; data-phocus=&quot;https://blog.kakaocdn.net/dn/1isEO/btsdtF9VPx8/HfRBgMxZp1fydKkIn7queK/img.png&quot; data-alt=&quot;출처: mdn&quot;&gt;&lt;img src=&quot;https://blog.kakaocdn.net/dn/1isEO/btsdtF9VPx8/HfRBgMxZp1fydKkIn7queK/img.png&quot; srcset=&quot;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F1isEO%2FbtsdtF9VPx8%2FHfRBgMxZp1fydKkIn7queK%2Fimg.png&quot; onerror=&quot;this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';&quot; data-origin-width=&quot;1514&quot; data-origin-height=&quot;194&quot;/&gt;&lt;/span&gt;&lt;figcaption&gt;출처: mdn&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;위의 사진에서 확인할 수 있듯이, sort 메소드는 &lt;b&gt;요소를 문자열로 변환&lt;/b&gt;하고,&amp;nbsp;&lt;b&gt;변환된 문자열을 비교하여 정렬&lt;/b&gt;한다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;그래서 위의 예제에서 2가 12보다 앞에 오지만 문자열로 변환되어, 유니 코드 순서에서 1은 2보다 작기 때문에 12가 2보다 앞에 정렬되게 된 것이다.&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;정리하자면, 정확한 정렬을 하기 위해서는(예외 케이스를 피하기 위해서는) sort((a,b) =&amp;gt; a-b)와 같이 작성해주는 것이 좋다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;&lt;b&gt;참고자료&lt;/b&gt;&lt;/h2&gt;
+&lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;ul style=&quot;list-style-type: disc;&quot; data-ke-list-type=&quot;disc&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mdn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style3&quot; /&gt;
+&lt;p style=&quot;text-align: center;&quot; data-ke-size=&quot;size16&quot;&gt;질문이나&lt;span&gt; &lt;/span&gt;잘못된&lt;span&gt; &lt;/span&gt;점은&lt;span&gt; &lt;/span&gt;댓글로&lt;span&gt; &lt;/span&gt;남겨주세요&lt;span&gt; :)&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;</description>
+      <category>의문점 해결하기</category>
+      <author>1two13</author>
+      <guid isPermaLink="true">https://1two13.tistory.com/110</guid>
+      <comments>https://1two13.tistory.com/entry/JS-12-13-1-2%EB%A5%BC-sort%ED%95%9C-%EA%B2%B0%EA%B3%BC%EA%B0%80-sortab-a-b%ED%95%9C-%EA%B2%B0%EA%B3%BC%EB%9E%91-%EA%B0%99%EC%9D%84%EA%B9%8C#entry110comment</comments>
+      <pubDate>Mon, 1 May 2023 20:01:09 +0900</pubDate>
+    </item>
+    <item>
+      <title>[컴퓨터 네트워크/스터디] IP Address</title>
+      <link>https://1two13.tistory.com/entry/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%84%B0%EB%94%94-IP-Address</link>
+      <description>&lt;h2 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size26&quot;&gt;&lt;b&gt;1. IP&amp;nbsp;Address&lt;/b&gt;&lt;/h2&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style5&quot; /&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;1-1&lt;span style=&quot;color: #000000;&quot;&gt;. IP주소에 대해서 설명해주세요.&lt;/span&gt;&lt;/b&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드: 네트워크에서 IP 주소가 어떤 의미를 갖는지 설명&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;IP 주소는 네트워크에서 &lt;b&gt;호스트와 라우터&lt;/b&gt;의 &lt;b&gt;각 인터페이스마다&lt;/b&gt; 할당되어 있는 &lt;b&gt;식별 번호&lt;/b&gt;입니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;1&lt;span style=&quot;color: #000000;&quot;&gt;-2. IPv4와 IPv6는 어떤 차이점이 있을까요?&lt;/span&gt;&lt;/b&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드: 버전별 차이를 설명&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;IPv4에서는 주소를 &lt;b&gt;4바이트&lt;/b&gt;로 표현하고, IPv6에서는 주소를 &lt;b&gt;16바이트&lt;/b&gt;로 표현합니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;IPv4에서 제공되는 &lt;b&gt;주소 개수의 한계&lt;/b&gt; 때문에 IPv6가 등장했습니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000; text-align: start;&quot;&gt;IPv6는 &lt;b&gt;보편화 단계&lt;/b&gt;에 있으며 IPv4와 혼용해서 사용하기 위해 터널링 기법을 사용합니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;1-3. 서브넷과 서브넷 마스크에 대해 설명해주세요.&lt;/b&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드: IP의 네트워크 부분과 호스트 부분과 함께 설명&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;서브넷은 네트워크의 &lt;b&gt;특정 네트워크&lt;/b&gt;입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;IPv4 주소의 네트워크 부분&lt;/b&gt;을 통해 서브넷을 식별할 수 있습니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;서브넷 마스크는 &lt;b&gt;네트워크와 호스트의 구분점&lt;/b&gt;이라고 할 수 있습니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;IPv4 주소는 네트워크 부분과 호스트 부분 2개로 구성되어 있는데, &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;서브넷 마스크는 이 2개를 구분하는 표시와 같은 것으로 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;서브넷 마스크의 '1'비트는 네트워크 부분, &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;'0'비트는 호스트 부분을 나타냅니다.&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;1-4&lt;span style=&quot;color: #000000;&quot;&gt;. 라우팅이 뭘까요?&lt;/span&gt;&lt;/b&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드: 네트워크에서 패킷이 라우터를 통해서 어떻게 이동하는지 설명&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;라우터가 패킷을 어디로 전송할지 결정하는 것을 라우팅이라고 합니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;라우팅은 패킷 수신자의 IP주소, 네트워크 홉 정보 등을 기반으로 이루어집니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;blockquote data-ke-style=&quot;style3&quot;&gt;# 조금 더 디테일한 질문&lt;/blockquote&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;1-5. 라우팅 프로토콜에 대해서 설명해주세요.&lt;/b&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드:&lt;span&gt; IGP(RIP, OSPF), EGP(BGP)에 대해 설명&lt;/span&gt;&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;라우팅을 위한 &lt;b&gt;라우팅 테이블을 만들기 위해서&lt;/b&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;네트워크 경로 정보를 주고 받기 위해 사용되는 프로토콜&lt;/b&gt;을 라우팅 프로토콜이라고 합니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;라우팅 프로토콜은 &lt;b&gt;AS 내부&lt;/b&gt;를 제어하는 IGP와 &lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;AS 사이&lt;/b&gt;를 제어하는 EGP로 나뉩니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;IGP의 RIP은 거리와 방향을 기반으로 경로를 계산하고,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;OSPF는 링크 상태를 기반으로 경로를 계산합니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;EGP의 BGP는 경로와 방향을 기반으로 경로를 계산합니다.&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;경로는 수신지까지 경유하는 AS를 나타냅니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;1-6. IP는 어떻게 할당될까요?&lt;/b&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드:&lt;span&gt;&lt;span&gt; 정적할당, 동적할당(DHCP)에 대해 설명&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;IP는 정적으로 할당할 수도 있고, 동적으로 할당할 수도 있습니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;정적 할당은 각 호스트별로 네트워크 관리자가 수동으로 IP 주소를 할당해주는 방식입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;동적 할당은 DHCP와 같은 프로토콜을 통해 자동으로 호스트에 IP 주소를 할당해주는 방식입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;DHCP는 브로도캐스트와 유니캐스트를 통해 UDP 기반으로 네트워크에 새롭게 참여한 호스트에서 IP 주소를 할당해줍니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;1-7. Public IP와 Private IP 차이는 뭘까요?&lt;/b&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드:&lt;span&gt;&lt;span&gt; 공인 IP, 사설 IP 차이에 대해 설명&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;공인(퍼블릭)IP는 인터넷에서의 IP 주소입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;ICANN이라는 조직으로부터 관리를 받습니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;사설(프라이빗)IP는 기업이나 가정의 네트워크 등 한정된 특정 조직내부에서 사용되는 IP 주소입니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;1-8. NAT가 뭘까요?&lt;/b&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드:&lt;span&gt;&lt;span&gt; 주소 변환이 필요한 예시를 들어 설명&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;NAT는 외부(공인)IP와 내부(사설)IP를 변환 시켜주는 프로토콜입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;예를 들어, 내부망에서 외부망으로, 외부망에서 내부망으로 패킷이 송수신될때&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;중간에서 NAT 테이블을 통해 주소를 변환시켜 줍니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size23&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&lt;b&gt;1-9. ICMP가 뭘까요?&lt;/b&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;가이드:&lt;span&gt;&lt;span&gt; IP와 연관지어 설명&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;hr data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;ICMP는 IP 프로토콜 레벨의 통신을 체크하거나,&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;다양한 에러를 알려주는 역할을 하는 프로토콜입니다.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;특정 호스트의 네트워크 상태를 파악하기 위해 ping 명령어를 사용할 수 있는데,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;color: #555555; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt;이때 ping은 ICMP 패킷을 송신하여 네트워크를 진단하게 해주는 명령어입니다.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style3&quot; /&gt;
+&lt;p style=&quot;text-align: center;&quot; data-ke-size=&quot;size16&quot;&gt;질문이나&lt;span&gt; &lt;/span&gt;잘못된&lt;span&gt; &lt;/span&gt;점은&lt;span&gt; &lt;/span&gt;댓글로&lt;span&gt; &lt;/span&gt;남겨주세요&lt;span&gt; :)&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;</description>
+      <category>CS/[JSCODE] 컴퓨터 네트워크</category>
+      <author>1two13</author>
+      <guid isPermaLink="true">https://1two13.tistory.com/109</guid>
+      <comments>https://1two13.tistory.com/entry/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%84%B0%EB%94%94-IP-Address#entry109comment</comments>
+      <pubDate>Mon, 1 May 2023 17:04:09 +0900</pubDate>
     </item>
   </channel>
 </rss>
