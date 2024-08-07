@@ -31,7 +31,7 @@ jobs:
       - name: Configure Git
         run: |
           git config user.name "1two13"
-          git config user.email "1tow13@gmail.com"
+          git config user.email "1two13@gmail.com"
         working-directory: .
 
       - name: Commit and push changes
