@@ -1,0 +1,22 @@
+name: '📚 Story'
+description: 사용자의 요구사항
+labels: 'story'
+
+body:
+  - type: textarea
+    attributes:
+      label: 📄 설명
+      description: 사용자의 요구사항을 작성해 주세요.
+      placeholder: 자세히 적을수록 좋습니다!
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: ✅ 작업할 이슈
+      placeholder: - [ ] [feature] :
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🙋🏻 참고 자료
+      description: 참고 자료가 있다면 작성해 주세요.
