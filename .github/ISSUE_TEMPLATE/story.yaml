@@ -13,7 +13,8 @@ body:
   - type: textarea
     attributes:
       label: ✅ 작업할 이슈
-      placeholder: - [ ] [feature] :
+      placeholder: 
+      - [ ] [feature] :
     validations:
       required: true
   - type: textarea
