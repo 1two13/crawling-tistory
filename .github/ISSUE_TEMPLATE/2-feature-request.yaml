@@ -1,5 +1,6 @@
 name: '✨ Task'
 description: 새로운 작업
+labels: 'task'
 
 body:
   - type: textarea
