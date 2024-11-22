@@ -7,9 +7,9 @@ assignees: 1two13
 
 ---
 
-name: "✨Task"
-description: "새로운 작업"
-labels: ["task"]
+name: "✨ Feature"
+description: "새로운 기능 추가"
+labels: ["feature"]
 body:
   - type: textarea
     attributes:
