@@ -6,7 +6,6 @@ type PostType = {
     title: string;
     content: string;
     link: string;
-
 }
 
 const PostList = () => {
