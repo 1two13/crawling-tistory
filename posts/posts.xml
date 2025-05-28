@@ -6,7 +6,7 @@
     <description>주니어 FE 개발자입니다.
 지식 공유하는 것을 좋아합니다 :)</description>
     <language>ko</language>
-    <pubDate>Tue, 27 May 2025 09:47:02 +0900</pubDate>
+    <pubDate>Wed, 28 May 2025 09:48:41 +0900</pubDate>
     <generator>TISTORY</generator>
     <ttl>100</ttl>
     <managingEditor>1two13</managingEditor>
@@ -4266,24 +4266,25 @@ console.log(aliveCatCount);&lt;/code&gt;&lt;/pre&gt;
       <title>실행 컨텍스트</title>
       <link>https://1two13.tistory.com/entry/%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8</link>
       <description>&lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;실행 컨텍스트&lt;/b&gt;&lt;/h3&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;실행 컨텍스트는 자바스크립트가 실행되는 환경이다. &lt;/b&gt;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 환경은 this, 변수, 객체, 함수 등 코드의 실행에 필요한 기반들이다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;color: #333333; text-align: start;&quot;&gt;실행 컨텍스트는 실행할 코드에 제공할&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;환경 정보&lt;/b&gt;들을 모아놓은 &lt;b&gt;객체&lt;/b&gt;입니다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 환경은 this, 변수, 객체, 함수 등 코드의 실행에 필요한 기반들입니다.&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;좀 더 구체적으로 말하자면, 실행 컨텍스트는 코드를 실행하는데 필요한 환경을 제공하고 관리한다.&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;이 중에서 식별자, 스코프, this 등은 실행 컨텍스트의 렉시컬 환경을 기반으로 관리되고, 코드의 실행순서는 콜스택(실행 컨텍스트의 스택)을 통해서 관리된다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;코드를 실행할 때 필요한 환경 정보들을 모아 컨텍스트를 구성하고, 이를 콜 스택에 쌓아올렸다가, 가장 위에 쌓여있는 컨텍스트와 관련 있는 코드들을 실행하는 식으로 전체 코드의 환경과 순서를 보장합니다.&amp;nbsp;&lt;/p&gt;
 &lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
 &lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;실행 컨텍스트 종류&lt;/b&gt;&lt;/h3&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;1. 전역 실행 컨텍스트&lt;/b&gt;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;처음으로 자바스크립트 코드가 실행될 때 생성된다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;처음으로 자바스크립트 코드가 실행될 때 생성됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;브라우저의 window, Node.js의 global 객체가 있습니다.&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;2. 함수 실행 컨텍스트&lt;/b&gt;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;함수가&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;호출&lt;/b&gt;될 때마다 생성된다. 각각의 함수 호출은 모두 각자의 실행 컨텍스트를 생성하고 가진다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;함수가&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;호출&lt;/b&gt;될 때마다 생성됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;각각의 함수 호출은 모두 각자의 실행 컨텍스트를 생성하고 가집니다.&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;3. eval 실행 컨텍스트&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;strict mode&lt;/b&gt;(엄격 모드)에서&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;독립적&lt;/b&gt;인&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;스코프&lt;/b&gt;를 생성한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;strict mode&lt;/b&gt;(엄격 모드)에서&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;독립적&lt;/b&gt;인&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;스코프&lt;/b&gt;를 생성합니다.&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;4. 모듈 실행 컨텍스트&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;모듈별&lt;/b&gt;로&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;독립적&lt;/b&gt;인 스코프를 생성한다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;모듈별&lt;/b&gt;로&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;b&gt;독립적&lt;/b&gt;인 스코프를 생성합니다.&lt;/p&gt;
 &lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
 &lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;실행 컨텍스트 스택(콜스택)&lt;/b&gt;&lt;/h3&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;스택은 선입 선출의 특징을 가진 자료구조이고, 자바스크립트는 스택에 실행 컨텍스트를 순차적으로 추가하고 제거하면서 코드의 순서를 관리하고 실행한다.&amp;nbsp;&lt;/p&gt;
@@ -4410,42 +4411,57 @@ foo();&lt;/code&gt;&lt;/pre&gt;
 &lt;h4 data-ke-size=&quot;size20&quot;&gt;&lt;b&gt;실행&lt;/b&gt;&lt;/h4&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;실행은 &lt;b&gt;선언문을 제외&lt;/b&gt;한 소스코드를 실행하는 과정이다. 실행 과정에서는 소스코드 실행에 필요한 정보, 즉 변수나 함수의 참조를 &lt;b&gt;실행 컨텍스트에서 찾고&lt;/b&gt; 실행과정에서 일어나는 변숫값의 변경 등은 &lt;b&gt;다시 실행 컨텍스트에 등록&lt;/b&gt;한다.&amp;nbsp;&lt;/p&gt;
 &lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
-&lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;실행 컨텍스트 내부&amp;nbsp;&lt;/b&gt;&lt;/h3&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;실행 컨텍스트 내부에는 LexicalEnvironment라는 객체가 존재한다. 이 객체는 스코프를 관리하는 역할을 하고, 이 안에 변수, 함수의 정의, 값들이 저장된다.&amp;nbsp;&lt;/p&gt;
+&lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;실행 컨텍스트 내부&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;figure class=&quot;imageblock alignCenter&quot; data-ke-mobileStyle=&quot;widthOrigin&quot; data-origin-width=&quot;826&quot; data-origin-height=&quot;470&quot;&gt;&lt;span data-url=&quot;https://blog.kakaocdn.net/dn/cB5ANb/btsOfpjGdDz/6Kpk2kkulKQFPkAhVfLn81/img.png&quot; data-phocus=&quot;https://blog.kakaocdn.net/dn/cB5ANb/btsOfpjGdDz/6Kpk2kkulKQFPkAhVfLn81/img.png&quot; data-alt=&quot;참조: 코어 자바스크립트&quot;&gt;&lt;img src=&quot;https://blog.kakaocdn.net/dn/cB5ANb/btsOfpjGdDz/6Kpk2kkulKQFPkAhVfLn81/img.png&quot; srcset=&quot;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcB5ANb%2FbtsOfpjGdDz%2F6Kpk2kkulKQFPkAhVfLn81%2Fimg.png&quot; onerror=&quot;this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';&quot; loading=&quot;lazy&quot; width=&quot;506&quot; height=&quot;288&quot; data-origin-width=&quot;826&quot; data-origin-height=&quot;470&quot;/&gt;&lt;/span&gt;&lt;figcaption&gt;참조: 코어 자바스크립트&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;실행 컨텍스트 객체는 활성화되는 시점에 아래 3가지 정보를 수집합니다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;1. VariableEnvironment: LexicalEnvironment의 스냅샷으로 변경사항은 반영되지 않습니다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2. LexicalEnvironment: 처음에는 VariableEnvironment와 같지만 변경 사항이 실시간으로 반영됩니다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;3. ThisBinding: this 식별자가 바라봐야 할 대상 객체입니다.&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;LexicalEnvironment는 실행 컨텍스트 종류에 따라 조금씩 다르지만 크게 2가지 영역으로 구성되어 있다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;LexicalEnvironment는 실행 컨텍스트 종류에 따라 조금씩 다르지만 크게 2가지 영역으로 구성되어 있습니다.&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;1. EnvironmentRecord(환경 레코드)&lt;/b&gt;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;식별자를 등록하고 관리하는 역할을 한다.&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;2. OuterLexicalEnvironmentReference(외부 렉시컬 환경에 대한 참조)&lt;/b&gt;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;상위 스코프를 참조하는 역할을 한다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;현재 컨텍스트와 관련된 코드의 &lt;b&gt;식별자 정보&lt;/b&gt;들이 저장됩니다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;컨텍스트 내부 전체를 처음부터 끝까지 훑으며 순서대로 수집합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그래서 코드가 실행되기 전임에도 불구하고 자바스크립트 엔진은 이미 해당 환경에 속한 코드의 변수명을 알 수 있습니다. 하지만 변수명만 호이스팅되기 때문에 할당 과정은 원래 자리에 그대로 남겨둡니다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;2. OuterEnvironmentReference(외부 렉시컬 환경에 대한 참조)&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;상위 스코프를 참조하는 역할을 합니다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다시 말해, 현재 호출된 함수가 &lt;b&gt;선언될 당시의&lt;/b&gt; L.E를 참조합니다.&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;그리고 LexicalEnvironment는 평가과정에서 일반적으로 3가지 동작을 수행한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그리고 LexicalEnvironment는 평가과정에서 일반적으로 3가지 동작을 수행합니다.&amp;nbsp;&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;1. &lt;b&gt;식별자&lt;/b&gt; 생성&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;2. &lt;b&gt;this&lt;/b&gt; binding&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;3. &lt;b&gt;참조할 외부 환경&lt;/b&gt; 결정&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;그다음 실행과정에서 평가과정에서 생성된 정보들을 기반으로 값들을 변경하는 방식으로 진행된다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그다음 실행과정에서 평가과정에서 생성된 정보들을 기반으로 값들을 변경하는 방식으로 진행됩니다.&amp;nbsp;&lt;/p&gt;
 &lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
-&lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;정리&lt;/b&gt;&lt;/h3&gt;
-&lt;ul style=&quot;list-style-type: disc;&quot; data-ke-list-type=&quot;disc&quot;&gt;
-&lt;li&gt;실행 컨텍스트는 실행할 코드에 제공할 환경 정보들을 모아놓은 객체이다.&lt;/li&gt;
-&lt;li&gt;실행 컨텍스트 객체는 활성화되는 시점에 variableEnvironment, LexicalEnvironment, ThisBinding을 수집한다.&amp;nbsp;&lt;/li&gt;
-&lt;li&gt;실행 컨텍스트를 생성할 때는 variableEnvironment와 LexicalEnvironment가 동일한 내용으로 구성되지만, LexicalEnvironment는 함수 실행 도중에 변경되는 사항이 즉시 반영되고, variableEnvironment는 초기 상태를 유지한다.&amp;nbsp;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;color: #333333; text-align: left;&quot;&gt;variableEnvironment와&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;LexicalEnvironment는 environmentRecord와 OuterLexicalEnvironmentReference로 구성되어 있다.&amp;nbsp;&lt;/li&gt;
-&lt;li&gt;스코프는 변수의 유효범위를 말하고 OuterLexicalEnvironmentReference는 해당 함수가 선언된 위치의 LexicalEnvironment을 참조한다. 코드 상에서 어떤 변수에 접근하려고 하면 현재 컨텍스트의 LexicalEnvironment를 탐색해서 발견되면 그 값을 반환하고, 발견하지 못하면 OuterLexicalEnvironmentReference에 담긴 LexicalEnvironment를 탐색한다. 전역 컨텍스트의 LexicalEnvironment까지 탐색해도 해당 변수를 찾지 못하면 undefined를 반환한다.&lt;/li&gt;
-&lt;li&gt;this에는 실행 컨텍스트를 활성화하는 당시에 지정된 this가 저장된다.&amp;nbsp;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;같이 보면 좋은 개념&lt;/b&gt;&lt;/h3&gt;
+&lt;h4 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size20&quot;&gt;&lt;b&gt;호이스팅&lt;/b&gt;&lt;/h4&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;변수는 선언부와 할당부를 나누어 선언부만 호이스팅되지만,&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;함수는 함수 전체를 끌어올립니다. (ex. function b() {})&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size20&quot;&gt;&lt;b&gt;함수 선언문과 함수 표현식&lt;/b&gt;&lt;/h4&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;함수 선언문은 함수 전체를 호이스팅하지만,&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;함수 표현식은 변수 선언부만 호이스팅됩니다.&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;함수를 변수에 할당하는 방식이 함수 표현식인데, 앞에서 언급했듯이 변수는 선언부만 호이스팅된다고 했습니다.&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;그렇기 때문에 어떻게 생각해보면 당연한 결과입니다.&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 style=&quot;color: #000000; text-align: start;&quot; data-ke-size=&quot;size20&quot;&gt;&lt;b&gt;스코프&lt;/b&gt;&lt;/h4&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;스코프는 식별자에 대한 유효범위 입니다.&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;식별자의 유효범위를 안에서부터 바깥으로 차례로 검색해나가는 것을 스코프 체인이라고 하는데,&lt;/p&gt;
+&lt;p style=&quot;color: #333333; text-align: start;&quot; data-ke-size=&quot;size16&quot;&gt;이를 가능하게 하는 것이 LexicalEnvironment의 두 번째 수집 자료인 OuterEnvironmentReference입니다.&amp;nbsp;&lt;/p&gt;
 &lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style6&quot; /&gt;
 &lt;h3 data-ke-size=&quot;size23&quot;&gt;&lt;b&gt;참고자료&lt;/b&gt;&lt;/h3&gt;
 &lt;ul style=&quot;list-style-type: disc;&quot; data-ke-list-type=&quot;disc&quot;&gt;
 &lt;li&gt;원티드에서 수강한 프로그램에서 학습한 내용&lt;/li&gt;
 &lt;li&gt;코어 자바스크립트 책&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;hr contenteditable=&quot;false&quot; data-ke-type=&quot;horizontalRule&quot; data-ke-style=&quot;style3&quot; /&gt;
-&lt;p style=&quot;text-align: center;&quot; data-ke-size=&quot;size16&quot;&gt;질문이나&lt;span&gt; &lt;/span&gt;잘못된&lt;span&gt; &lt;/span&gt;점은&lt;span&gt; &lt;/span&gt;댓글로&lt;span&gt; &lt;/span&gt;남겨주세요&lt;span&gt; :)&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
       <category>JavaScript</category>
       <category>렉시컬환경</category>
+      <category>스코프</category>
       <category>실행컨텍스트</category>
+      <category>호이스팅</category>
       <author>1two13</author>
       <guid isPermaLink="true">https://1two13.tistory.com/121</guid>
       <comments>https://1two13.tistory.com/entry/%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8#entry121comment</comments>
